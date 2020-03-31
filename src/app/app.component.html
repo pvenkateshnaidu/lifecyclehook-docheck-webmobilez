@@ -1,0 +1,33 @@
+<h3>Using @input Decorator </h3>
+
+<div class="checkbox">
+	<label for="favorite-animal">Name  </label>
+	<input type="text" [(ngModel)] = "name">
+	<p>{{name}}<p>
+</div>
+<h3>Using without @input Decorator </h3>
+<div class="checkbox">
+	<label for="favorite-animal"> Using boolean Value </label>
+	<input type="checkbox" [(ngModel)] = "isCheckedBoolean"
+ [value]="isCheckedBoolean" name="isCheckedBoolean">
+</div>
+	<h3>Using button Onclick trigger </h3>
+	<div class="mb">
+		<button (click)="buttonClick()">Button Click</button>
+	</div>
+
+	<h3>Output ngDocheck Hook</h3>
+	<div class="message">
+		<div class="message">
+			{{message}}
+		</div>
+	</div>
+
+
+
+<br>
+<br>
+
+  <h3>Important Notes:</h3>
+<p>Detect and act upon changes that Angular can't or won't detect on its own.</p>
+<p>Called during every change detection run, immediately after ngOnChanges() and ngOnInit().</p>
